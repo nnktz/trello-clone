@@ -4,7 +4,7 @@ import * as z from 'zod';
 import { revalidatePath } from 'next/cache';
 import { redirect } from 'next/navigation';
 
-import { db } from '@/prisma/db';
+import { db } from '@/lib/db';
 
 export type State = {
   errors?: {

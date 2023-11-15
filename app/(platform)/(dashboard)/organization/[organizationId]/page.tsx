@@ -1,4 +1,4 @@
-import { db } from '@/prisma/db';
+import { db } from '@/lib/db';
 
 import { Board } from './board';
 import { Form } from './form';
