@@ -66,10 +66,12 @@ export const FormInput = forwardRef<HTMLInputElement, FormInputProps>(
           />
         </div>
 
-        <FormErrors
-          id={id}
-          errors={errors}
-        />
+        {errors && (
+          <FormErrors
+            id={id}
+            errors={errors}
+          />
+        )}
       </div>
     );
   }
