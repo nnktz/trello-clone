@@ -28,12 +28,12 @@ const BoardIdPage = async ({ params }: BoardIdPageProps) => {
     include: {
       cards: {
         orderBy: {
-          createdAt: 'asc',
+          order: 'asc',
         },
       },
     },
     orderBy: {
-      createdAt: 'asc',
+      order: 'asc',
     },
   });
 
