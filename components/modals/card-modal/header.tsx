@@ -28,6 +28,7 @@ export const Header = ({ data }: HeaderProps) => {
       });
 
       toast.success(`Renamed to "${data.title}" successfully!`);
+      setTitle(data.title);
     },
     onError: (err) => {
       toast.error(err);
