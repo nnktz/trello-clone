@@ -7,10 +7,10 @@ import { db } from '@/lib/db';
 import { createSafeAction } from '@/lib/create-safe-action';
 import { absoluteUrl } from '@/lib/utils';
 import { stripe } from '@/lib/stripe';
-import { InputType, ReturnType } from './types';
+import { ReturnType } from './types';
 import { StripeRedirect } from './schema';
 
-const handler = async (data: InputType): Promise<ReturnType> => {
+const handler = async (): Promise<ReturnType> => {
   const { userId, orgId } = auth();
   const user = await currentUser();
 
