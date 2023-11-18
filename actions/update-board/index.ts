@@ -38,7 +38,7 @@ const handler = async (data: InputType): Promise<ReturnType> => {
       entityId: board.id,
       entityTitle: board.title,
       entityType: ENTITY_TYPE.BOARD,
-      action: ACTION.DELETE,
+      action: ACTION.UPDATE,
     });
   } catch (error) {
     return {
